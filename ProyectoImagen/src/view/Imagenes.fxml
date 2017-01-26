@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainControl">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="66.0" prefWidth="600.0" styleClass="titlebackground" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="93.0" layoutX="533.0" layoutY="31.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true" styleClass="myexitimage" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label layoutX="33.0" layoutY="21.0" prefHeight="30.0" prefWidth="216.0" styleClass="titletext" text="DOWNLOADING FILES...">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <GridPane prefHeight="334.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="TOP_LEFT" text="THING LICENSE" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets bottom="34.0" left="45.0" right="24.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../../../../../Downloads/Ejercicios/interfaces/lrg_chooser_cc.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="64.0" onMouseClicked="#lanzaraplicacion" pickOnBounds="true" preserveRatio="true" styleClass="btn_persona" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../../../../../Downloads/Ejercicios/interfaces/lrg_chooser_by.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="23.0" right="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" text="Z Endstop Fine Adjustment Prusa i3 - Anet A8&#10;by Meermeneer is licensed under the Creative&#10;Commons-Attribution License" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </TextArea>
+                  <Label style="-fx-text-fill: #C4C4C4;" text="What does this mean?" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #C4C4C4;" text=". You must attribute(give credit) to the creator of this thing" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets top="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="12.0" prefWidth="300.0" style="-fx-text-fill: #C4C4C4;" text=".Remixing or changing this thing is allowed" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="174.0" style="-fx-text-fill: #C4C4C4;" text=".Commercial use is allowed" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" right="14.0" top="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="SHOW SOME LOVE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="34.0" left="45.0" right="24.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" style="-fx-text-fill: #C4C4C4;" text="Say thanks by giving Meermeneer a tip and help them continue to share amazing things with the ThingIverse community" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets right="20.0" top="40.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="207.0" onMouseClicked="#lanzar" pickOnBounds="true" preserveRatio="true" styleClass="mybutton" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <image>
+                        <Image url="@../../../../../Downloads/Ejercicios/interfaces/boton.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../../Downloads/Ejercicios/interfaces/camera.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="13.0" right="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="268.0" style="-fx-text-fill: #C4C4C4;" text="We`re sure Meermeneer would love to see what you have printed.Please document your print and share a make with the community." GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets bottom="34.0" left="1.0" right="88.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-translate-x: #C4C4C4;" text="To post a make simply visit this thing again and click I made one to start uploading your photo.&#10;It`s even easier to post a make via the ThingIverse Mobile App (available Via Google Play and Apple &#10;App Store." GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets left="13.0" />
+               </padding>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

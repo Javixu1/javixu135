@@ -1,0 +1,28 @@
+.mybutton{
+	-fx-image:url("../../resources/images/boton.PNG");
+	-fx-cursor:hand;
+}
+.mybutton:hover{
+	-fx-image:url("../../resources/images/boton_hover.PNG");
+	-fx-cursor:hand;
+}
+.myexitimage{
+	-fx-image:url("../../resources/images/boton_salir.PNG");
+	-fx-cursor:hand;
+}
+.myexitimage:hover{
+	-fx-image:url("../../resources/images/boton_salir_hover.png");
+	-fx-cursor:hand;
+}
+.btn_persona{
+	-fx-image:url("../../resources/images/lrg_chooser_by.png");
+}
+.btn_persona:hover{
+	-fx-image:url("../../resources/images/lrg_chooser_by_hover.png");
+}
+.titletext{
+	-fx-text-fill: #FFFFFF;
+}
+.titlebackground{
+	-fx-background-color: #229999;
+}
